@@ -1,3 +1,7 @@
+//Aluno: Roberto Elias de Souza    RA: 223657    Curso: FACENS_ADS_EaD_5.Semestre
+
+// AC2 - Atividade Prática   Disciplina: Programação de Dispositivos Móveis  Professor: Amauri
+
 package com.robertoelias.controleDespesas;
 
 import android.content.Intent;
@@ -12,6 +16,7 @@ import com.robertoelias.controleDespesas.adapter.DespesaAdapter;
 import com.robertoelias.controleDespesas.model.Despesa;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toolbar;
 import java.util.ArrayList;
@@ -47,12 +52,11 @@ public class MainActivity extends AppCompatActivity {
     private void setSupportActionBar(Toolbar toolbar) {
     }
 
-
     public void carregarListaDespesas(){
 
         //listar despesas
         Despesa despesa1 = new Despesa();
-        despesa1.setNomeDespesa("Alimentação");
+        despesa1.setNomeDespesa("Alimentação R$250,00 10/05/2024");
         listaDespesas.add(despesa1);
 
         Despesa despesa2 = new Despesa();

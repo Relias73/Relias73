@@ -2,45 +2,61 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".AdicionarDespesas"
-    style="@style/linear">
+    style="@style/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textDirection="locale"
+    tools:context=".AdicionarDespesas">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Despesa1"
+            android:id="@+id/despesa1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite uma nova despesa" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/valor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o Valor" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Insira a Data" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
     </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/valorNumberDecimal1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Valor R$"
-        android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="166dp" />
-
-    <EditText
-        android:id="@+id/editTextDate1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="DD/MM/AAAA"
-        android:inputType="date"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="243dp" />
+    <Button
+        android:id="@+id/button"
+        style="@style/actionbutton"
+        android:layout_marginBottom="360dp"
+        android:text="Confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,7 +18,7 @@
     <include
         layout="@layout/content_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="750dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -28,12 +28,13 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:fabSize="normal"
-        app:srcCompat="@drawable/ic_confirmar" />
+        app:srcCompat="@drawable/ic_confirmar"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <android.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="71dp"
         android:background="@color/white"
         app:layout_anchor="@+id/toolbar"
         app:layout_anchorGravity="bottom|center" />
